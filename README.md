@@ -1,21 +1,19 @@
-
-PROJECT: ICS 32 DISTRIBUTED SOCIAL MESSENGER (ASSIGNMENT 5)
+DISTRIBUTED SOCIAL MESSENGER - TCP Client-Server Messaging Application 
 
 AUTHOR: PRANAV KORKONDA
 
-STUDENT ID: 20366897
 
 GOT QUESTIONS? EMAIL ME: pkorkond@uci.edu
 
 1. OVERVIEW & ENGINEERING SCOPE
 This application is a desktop-based Direct Messaging (DM) client that interfaces with a Distributed Social Server using a custom TCP/IP protocol. While the front-end provides a full-featured GUI for users to manage profiles and exchange messages, the back-end is engineered for high-reliability data handling.
 
-As a Computer Engineering (CpE) focused project, it emphasizes the intersection of hardware-software communication, specifically focusing on asynchronous networking protocols and local data persistence—skills directly applicable to satellite avionics and ground-station telemetry.
+It emphasizes the intersection of hardware-software communication, specifically focusing on asynchronous networking protocols and local data persistence
 
 2. MODULAR ARCHITECTURE
 The project is divided into several modules to ensure a strict separation of concerns, mimicking professional systems integration:
 
-GUI (a5.py): A Tkinter-based interface. It handles user input and displays conversations with dynamic left/right message alignment. A background polling mechanism is implemented using the .after() method to check for new server telemetry every 5 seconds without blocking the main UI thread.
+GUI (a5.py): A Tkinter-based interface. It handles user input and displays conversations with dynamic left/right message alignment. A background polling mechanism is implemented using the .after() method to poll for new messages every 5 seconds without blocking the main UI thread.
 
 LOGIC (ds_messenger.py): This is the "engine" of the app. The DirectMessenger class abstracts the complexity of socket connections and the "Join" authentication flow, mapping raw server data into Python DirectMessage objects.
 
@@ -48,4 +46,4 @@ Note: Use the UCI VPN if you are off-campus.
 Messaging: Add a contact via Settings -> Add Contact, select them from the list, and hit Send.
 
 5. VERIFICATION & TESTING
-This project strictly adheres to the assignment rubric and PEP 8 coding standards. All core logic—specifically the protocol and messenger modules—has been verified using pytest to ensure 100% reliability in data transmission and message processing.
+This project strictly adheres to the assignment rubric and PEP 8 coding standards. All core protocol and messaging logic was verified using pytest
