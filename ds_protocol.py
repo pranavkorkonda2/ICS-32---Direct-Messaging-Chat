@@ -1,12 +1,3 @@
-# ds_protocol.py
-
-# Starter code for assignment 5 (ICS 32)
-
-# Replace placeholders with your information.
-
-# NAME Pranav Korkonda
-# EMAIL pkorkond@uci.edu
-# STUDENT ID 20366897
 """Module for handling encoding and decoding of json messages according to the ds protocol"""
 import json
 from collections import namedtuple
