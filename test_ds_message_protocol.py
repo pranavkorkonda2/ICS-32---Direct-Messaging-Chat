@@ -1,6 +1,6 @@
 """Module that contains unit tests for the ds_protocol.py module to ensure correct JSON encoding/decoding"""
 import ds_protocol
-import json # forgot this oops
+import json
 
 def cleanup(filename='test_ds_message_protocol.py'):
     """Removes trailing whitespace"""
